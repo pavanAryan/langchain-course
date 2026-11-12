@@ -1,0 +1,16 @@
+# Project-local uv settings: keep everything inside this folder.
+
+# Python itself lives in .uv/python (installed with --install-dir; this uv
+# version has no config key for it). .python-version points at that interpreter.
+
+# Package download/build cache goes here instead of %LOCALAPPDATA%\uv\cache
+cache-dir = ".uv/cache"
+
+# Never download Pythons into the global uv folder automatically
+python-downloads = "manual"
+
+# Use the Windows certificate store (needed behind the corporate HTTPS proxy)
+system-certs = true
+
+# Cache and .venv are on the same drive now, but copy is safest on Windows
+link-mode = "copy"

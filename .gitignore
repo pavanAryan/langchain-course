@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environment
+.venv/
+
+# Project-local uv Python installs and cache
+.uv/
+
+# Secrets (API keys)
+.env
